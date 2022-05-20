@@ -1,0 +1,27 @@
+### GET ANIMALS
+GET http://localhost:5000/animals HTTP/1.1
+
+### ADD HORSE TO ANIMALS
+POST http://localhost:5000/animals HTTP/1.1
+content-type: application/json
+
+{
+  "item": "horse"
+}
+
+### CHANGE HORSE TO COW IN ANIMALS
+PATCH http://localhost:5000/animals HTTP/1.1
+content-type: application/json
+
+{
+  "targetItem": "horse",
+  "newItem": "cow"
+}
+
+### DELETE COW FROM ANIMALS
+DELETE http://localhost:5000/animals HTTP/1.1
+content-type: application/json
+
+{
+  "targetItem": "cow"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "vf-crud-api",
+  "version": "1.0.0",
+  "description": "An express API for managing lists of items.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lancerael/vf-crud-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lancerael/vf-crud-api/issues"
+  },
+  "homepage": "https://github.com/lancerael/vf-crud-api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "vf-crud-helper": "^1.0.0"
+  }
+}
