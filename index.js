@@ -14,14 +14,10 @@ const app = express()
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-// app.get('/', (req, res) => {
-//   res.send('Hello world')
-// })
-
 const handleRequest = (res, callback) => {
   callback()
     .then(items => res.send(items))
-    .catch(err => res.send(`Oops something went wrong: ${err}`))
+    .catch(err => res.status(400).send(`Oops something went wrong with your request: ${err}`))
 }
 
 // CREATE
